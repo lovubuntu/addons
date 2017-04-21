@@ -1,17 +1,35 @@
 {
-  "name": "basscss-addons",
+  "name": "responsive-addons",
   "version": "1.0.0",
-  "description": "Optional modules to extend Basscss",
+  "description": "Responsive addons for xs, sm, md, lg sizes",
+  "scripts": {
+    "prepublish": "mkdir -p css && postcss index.css -u postcss-import -u postcss-custom-media -u postcss-custom-properties -u autoprefixer -o css/responsive-addons.css"
+  },
+  "devDependencies": {
+    "autoprefixer": "6.3.1",
+    "postcss-cli": "2.5.0",
+    "postcss-custom-media": "5.0.1",
+    "postcss-custom-properties": "5.0.0",
+    "postcss-import": "8.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lovubuntu/addons.git"
+  },
   "keywords": [
     "basscss",
+    "responsive",
+    "xs",
+    "sm",
+    "md",
+    "lg",
     "functional-css",
-    "atomic",
-    "oocss",
     "utility"
   ],
-  "author": "Brent Jackson",
+  "author": "Prank <meetprank@gmail.com> (https://lovubuntu.github.io/)",
   "license": "MIT",
-  "dependencies": {
-    "colors.css": "^3.0.0"
-  }
+  "bugs": {
+    "url": "https://github.com/lovubuntu/addons/issues"
+  },
+  "homepage": "https://github.com/lovubuntu/addons#readme"
 }
