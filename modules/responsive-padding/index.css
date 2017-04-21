@@ -1,9 +1,11 @@
 /* Basscss Responsive Padding */
 
+@import "./lib/xs-padding";
 @import "./lib/sm-padding";
 @import "./lib/md-padding";
 @import "./lib/lg-padding";
 
+@custom-media --breakpoint-xs (max-width: 40em);
 @custom-media --breakpoint-sm (min-width: 40em);
 @custom-media --breakpoint-md (min-width: 52em);
 @custom-media --breakpoint-lg (min-width: 64em);

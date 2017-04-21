@@ -1,6 +1,7 @@
 /* Basscss Media Object */
 
 .media,
+.xs-media,
 .sm-media,
 .md-media,
 .lg-media {
@@ -30,6 +31,10 @@
   flex: 1 1 auto;
 }
 
+@media (--breakpoint-xs) {
+  .sm-media { display: flex }
+}
+
 @media (--breakpoint-sm) {
   .sm-media { display: flex }
 }
@@ -42,6 +47,7 @@
   .lg-media { display: flex }
 }
 
+@custom-media --breakpoint-xs (max-width: 40em);
 @custom-media --breakpoint-sm (min-width: 40em);
 @custom-media --breakpoint-md (min-width: 52em);
 @custom-media --breakpoint-lg (min-width: 64em);

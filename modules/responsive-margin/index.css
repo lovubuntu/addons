@@ -1,9 +1,11 @@
 /* Basscss Responsive Margin */
 
+@import "./lib/xs-margin";
 @import "./lib/sm-margin";
 @import "./lib/md-margin";
 @import "./lib/lg-margin";
 
+@custom-media --breakpoint-xs (max-width: 40em);
 @custom-media --breakpoint-sm (min-width: 40em);
 @custom-media --breakpoint-md (min-width: 52em);
 @custom-media --breakpoint-lg (min-width: 64em);

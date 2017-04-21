@@ -1,9 +1,11 @@
 /* Basscss Responsive Layout */
 
+@import "./lib/xs-layout";
 @import "./lib/sm-layout";
 @import "./lib/md-layout";
 @import "./lib/lg-layout";
 
+@custom-media --breakpoint-xs (max-width: 40em);
 @custom-media --breakpoint-sm (min-width: 40em);
 @custom-media --breakpoint-md (min-width: 52em);
 @custom-media --breakpoint-lg (min-width: 64em);

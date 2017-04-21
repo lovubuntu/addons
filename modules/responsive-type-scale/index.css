@@ -1,9 +1,11 @@
 /* Basscss Responsive Type Scale */
 
+@import "./lib/xs-type-scale";
 @import "./lib/sm-type-scale";
 @import "./lib/md-type-scale";
 @import "./lib/lg-type-scale";
 
+@custom-media --breakpoint-xs (max-width: 40em);
 @custom-media --breakpoint-sm (min-width: 40em);
 @custom-media --breakpoint-md (min-width: 52em);
 @custom-media --breakpoint-lg (min-width: 64em);

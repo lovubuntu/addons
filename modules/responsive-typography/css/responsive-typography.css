@@ -1,5 +1,12 @@
 /* Basscss Responsive Typography */
 
+@media (max-width: 40em) {
+  .xs-left-align   { text-align: left }
+  .xs-center       { text-align: center }
+  .xs-right-align  { text-align: right }
+  .xs-justify      { text-align: justify }
+}
+
 @media (min-width: 40em) {
   .sm-left-align   { text-align: left }
   .sm-center       { text-align: center }
